@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">{% block title %} Students {% endblock %}</h1>
+    <hr>
+    <div >
+        <p>
+            <a href="{{ url_for('dash_students') }}">Students Dashbord</a>
+        </p>
+        <p>
+            <a href="{{ url_for('dash_posts') }}">Posts Dashbord</a>
+        </p>
+   
+        
+    </div>
+{% endblock %}
